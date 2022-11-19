@@ -18,7 +18,7 @@ return new class extends Migration
             $table->timestamps();
             $table->string('Nombre');
             $table->string('Icono');
-            $table->bit('Activo');
+            $table->boolean('Activo');
         });
     }
 

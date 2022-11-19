@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('NumeroDocumento');
             $table->string('Direccion');
             $table->string('Telefono');
-            $table->bit('Activo');
+            $table->boolean('Activo');
         });
     }
 

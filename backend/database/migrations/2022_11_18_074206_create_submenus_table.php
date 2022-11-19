@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('Controlador');
             $table->string('Vista');
             $table->string('Icono');
-            $table->bit('Activo');
+            $table->boolean('Activo');
 
         });
     }

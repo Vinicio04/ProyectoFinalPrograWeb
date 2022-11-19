@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('RUC');
             $table->string('Direccion');
             $table->string('Telefono');
-            $table->bit('Nombre');
+            $table->boolean('Activo');
         });
     }
 

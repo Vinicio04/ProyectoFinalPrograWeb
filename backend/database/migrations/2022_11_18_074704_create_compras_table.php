@@ -18,7 +18,7 @@ return new class extends Migration
             $table->timestamps();
             $table->decimal('TotalCosto');
             $table->string('Comprobante');
-            $table->bit('Activo');
+            $table->boolean('Activo');
         });
     }
 

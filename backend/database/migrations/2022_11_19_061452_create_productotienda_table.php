@@ -19,8 +19,8 @@ return new class extends Migration
             $table->decimal('PrecioUnidadCompra');
             $table->decimal('PrecioUnidadVenta');
             $table->bigInteger('Stock');
-            $table->bit('Activo');
-            $table->bit('Iniciado');
+            $table->boolean('Activo');
+            $table->boolean('Iniciado');
         });
     }
 

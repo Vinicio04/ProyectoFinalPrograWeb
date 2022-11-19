@@ -17,12 +17,12 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('Codigo');
-            $table->int('CantidadProducto');
-            $table->int('CantidadTotal');
+            $table->decimal('CantidadProducto');
+            $table->decimal('CantidadTotal');
             $table->decimal('TotalCosto');
             $table->decimal('ImporteRecibido');
             $table->decimal('ImporteCambio');
-            $table->bit('Activo');
+            $table->boolean('Activo');
         });
     }
 

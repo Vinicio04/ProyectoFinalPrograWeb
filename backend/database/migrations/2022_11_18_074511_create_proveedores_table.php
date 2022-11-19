@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('Direccion');
             $table->string('Telefono');
             $table->string('email');
-            $table->bit('Activo');
+            $table->boolean('Activo');
         });
     }
 

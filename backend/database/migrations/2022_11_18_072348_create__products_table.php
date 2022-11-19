@@ -17,10 +17,10 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('Codigo');
-            $table->int('ValorCodigo');
+            $table->decimal('ValorCodigo');
             $table->string('Nombre');
             $table->string('Descripcion');
-            $table->bit('Activo');
+            $table->boolean('Activo');
         });
     }
 

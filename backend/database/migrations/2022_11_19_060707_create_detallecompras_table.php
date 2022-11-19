@@ -16,10 +16,10 @@ return new class extends Migration
         Schema::create('detallecompras', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->int('Cantidad');
+            $table->decimal('Cantidad');
             $table->decimal('PrecioUnitarioCompra');
             $table->decimal('PrecioUnitarioVenta');
-            $table->bit('Activo');
+            $table->boolean('Activo');
 
         });
     }
