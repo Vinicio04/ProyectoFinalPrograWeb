@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('submenus', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->timestamps();
             $table->string('Nombre');
             $table->string('Controlador');
