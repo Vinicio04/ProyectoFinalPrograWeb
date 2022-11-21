@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark shadow-sm">
+<nav class="navbar navbar-expand-md navbar-dark  bg-dark shadow-sm">
     <div class="container">
-        <a class="navbar-brand" href="{{ url('/') }}">
-            E-COMMERCE TIENDA
+        <a class="navbar-brand " href="{{ url('/') }}">
+           Tienda de Productos electronicos TecnoFacil
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
             <span class="navbar-toggler-icon"></span>
@@ -11,6 +11,20 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('shop') }}">TIENDA</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('clientes.index') }}">Clientes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('categories.index') }}">Categorias   </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('proveedores.index') }}">Proveedores   </a>
+                </li>
+
+
+
+
+                
                 <li class="nav-item dropdown">
                     <a id="navbarDropdown" class="nav-link dropdown-toggle"
                        href="#" role="button" data-toggle="dropdown"
@@ -20,8 +34,15 @@
                             <i class="fa fa-shopping-cart"></i> {{ \Cart::getTotalQuantity()}}
                         </span>
                     </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('categories.index') }}">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('categories.index') }}">Registrarse</a>
+                    </li>
+    
 
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" style="width: 450px; padding: 0px; border-color: #9DA0A2">
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" style="width: 450px; padding: 0px; border-color: #0893ef">
                         <ul class="list-group" style="margin: 20px;">
                             @include('partials.cart-drop')
                         </ul>
