@@ -41,10 +41,10 @@
                         </span>
                     </a>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('categories.index') }}">Login</a>
+                        <a class="nav-link" href="#">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('categories.index') }}">Registrarse</a>
+                        <a class="nav-link" href="#">Registrarse</a>
                     </li>
     
 
