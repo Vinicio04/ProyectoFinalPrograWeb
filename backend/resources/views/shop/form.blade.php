@@ -1,6 +1,6 @@
 <div class="box box-info padding-1">
     <div class="box-body">
-        
+
         <div class="form-group">
             {{ Form::label('Nombre') }}
             {{ Form::text('Nombre', $shop->Nombre, ['class' => 'form-control' . ($errors->has('Nombre') ? ' is-invalid' : ''), 'placeholder' => 'Nombre']) }}
@@ -8,7 +8,7 @@
         </div>
         <div class="form-group">
             {{ Form::label('RUC') }}
-            {{ Form::text('RUC', $shop->RUC, ['class' => 'form-control' . ($errors->has('RUC') ? ' is-invalid' : ''), 'placeholder' => 'Ruc']) }}
+            {{ Form::text('RUC', $shop->RUC, ['class' => 'form-control' . ($errors->has('RUC')  ? ' is-invalid' : ''), 'placeholder' => 'Ruc']) }}
             {!! $errors->first('RUC', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="form-group">
