@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Product;
+use App\Models\Detalle;
+use App\Models\Detalleventa;
 
 class CartController extends Controller
 {
@@ -53,6 +55,16 @@ class CartController extends Controller
         return redirect()->route('cart.index')->with('success_msg', 'Car is cleared!');
     }
 
-
+    /* public function validarcarrito(){
+        $venta = new Venta();
+        $venta->'Codigo' = "C0";
+        $venta->'CantidadProducto' = 0.0;
+        $venta->'CantidadTotal' = Cart::total();
+        $venta->'TotalCosto' = Cart::total();
+        $venta->'ImporteRecibido' = 0;
+        $venta->'ImporteCambio' = 0;
+        $venta->'Activo' = 1;
+        //foreach(Cart::content)
+    } */
 
 }

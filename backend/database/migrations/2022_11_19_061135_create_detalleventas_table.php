@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('detalleventas', function (Blueprint $table) {
-            $table->increments('id');
+            $table->id();
             $table->timestamps();
             $table->decimal('Cantidad');
             $table->decimal('PrecioUnidad');

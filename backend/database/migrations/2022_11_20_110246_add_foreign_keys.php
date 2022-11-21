@@ -16,6 +16,9 @@ return new class extends Migration
         Schema::table('products', function (Blueprint $table) {
             $table->foreignId('category_id')->constrained()->unsigned();
         });
+        //Schema::table('detalleventas', function (Blueprint $table) {
+        //    $table->foreignId('venta_id')->constrained()->unsigned();
+        //});
     }
 
     /**

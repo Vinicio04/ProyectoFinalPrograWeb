@@ -8,6 +8,7 @@ use App\Http\Controllers\MenuController;
 use App\Http\Controllers\ProveedoreController;
 use App\Http\Controllers\RolController;
 use App\Http\Controllers\ShopController;
+use App\Http\Controllers\ProductController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,6 +29,7 @@ Route::post('/add', [CartController::class, 'add'])->name('cart.store');
 Route::post('/update', [CartController::class, 'update'])->name('cart.update');
 Route::post('/remove', [CartController::class, 'remove'])->name('cart.remove');
 Route::post('/clear', [CartController::class, 'clear'])->name('cart.clear');
+Route::post('/validarcarrito', [CartController::class, 'validarcarrito'])->name('cart.clear');
 
 Route::resource('categories', CategoryController::class);
 Route::resource('clientes', ClienteController::class);
@@ -35,4 +37,5 @@ Route::resource('menus', MenuController::class);
 Route::resource('proveedores', ProveedoreController::class);
 Route::resource('rols', RolController::class);
 Route::resource('shops', ShopController::class);
+Route::resource('products', ProductController::class);
 
